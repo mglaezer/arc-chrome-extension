@@ -26,7 +26,7 @@ Drag tabs into Pinned or Favorites to keep them, or drag a pinned entry onto Tod
 
 Pinned items are stored as normal Chrome bookmarks under Other bookmarks → Arc, so they sync when Chrome sync is on and stay if you remove the extension.
 
-Shortcuts: Alt+A opens and closes the sidebar, Alt+Shift+P pins or unpins the current tab.
+Shortcuts: Alt+S opens and closes the sidebar, Alt+Shift+P pins or unpins the current tab.
 
 **Screenshot:** screenshot-1280x800.png
 
