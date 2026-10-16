@@ -87,13 +87,29 @@ details[open] summary::before { content: '▾'; }
 .row .time { color: var(--muted); font-size: 11px; }
 .row input { flex: 1; min-width: 0; font: inherit; }
 .folder .title { font-weight: 600; }
+/* A transparent border instead of a margin, so the gap still belongs to the row and catches drops. */
+li:not(:first-child) > .folder {
+  height: 38px;
+  border-top: 6px solid transparent;
+  background-clip: padding-box;
+}
+.children { position: relative; }
+.children::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 4px;
+  left: var(--guide-left);
+  width: 1.5px;
+  background: color-mix(in srgb, var(--muted) 35%, transparent);
+}
 .bookmark:not(.loaded) img, .bookmark:not(.loaded) .title { opacity: 0.5; }
 .folder-icon {
   width: 16px;
   height: 16px;
   flex: none;
   fill: none;
-  stroke: var(--muted);
+  stroke: var(--text);
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;

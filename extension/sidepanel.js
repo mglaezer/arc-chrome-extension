@@ -159,6 +159,8 @@ function treeItem(node, tabFor, depth = 0) {
   li.append(el);
   if (!isCollapsed) {
     const ul = document.createElement('ul');
+    ul.className = 'children';
+    ul.style.setProperty('--guide-left', `${ROW_PADDING + depth * INDENT + 7}px`);
     ul.append(...node.children.map(child => treeItem(child, tabFor, depth + 1)));
     li.append(ul);
   }
