@@ -86,6 +86,7 @@ details[open] summary::before { content: '▾'; }
 .row .title { flex: 1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .row .time { color: var(--muted); font-size: 11px; }
 .row input { flex: 1; min-width: 0; font: inherit; }
+.folder .title { font-weight: 600; }
 .bookmark:not(.loaded) img, .bookmark:not(.loaded) .title { opacity: 0.5; }
 .folder-icon {
   width: 16px;
