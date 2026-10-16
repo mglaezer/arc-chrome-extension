@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <section id="favorites" class="grid"></section>
+
+  <header class="section-head"><span>Pinned</span><button id="new-folder" title="New folder">+</button></header>
+  <ul id="pinned" class="list"></ul>
+
+  <hr>
+
+  <header class="section-head"><span>Today</span></header>
+  <ul id="today" class="list"></ul>
+
+  <details id="archive">
+    <summary>Archive</summary>
+    <label>Close Today tabs after <input id="archive-hours" type="number" min="0"> hours (0 = never)</label>
+    <ul id="archive-list"></ul>
+  </details>
+
+  <div id="menu" hidden></div>
+  <div id="drop-line" hidden></div>
+
+  <script type="module" src="sidepanel.js"></script>
+</body>
+</html>
